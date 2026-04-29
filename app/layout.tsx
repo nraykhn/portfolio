@@ -25,7 +25,7 @@ export const metadata = {
 
   openGraph: {
     title: "Nur Alya Khairina",
-    description: "Portfolio",
+    description: "Portfolio of Nur Alya Khairina, an Information Systems student focused on data science, full-stack development, and UI/UX.",
     url: "https://alyakhairina.com",
     siteName: "Alya Portfolio",
     images: [
@@ -42,7 +42,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Nur Alya Khairina",
-    description: "Portfolio",
+    description: "Portfolio of Nur Alya Khairina, an Information Systems student focused on data science, full-stack development, and UI/UX.",
     images: ["https://alyakhairina.com/preview.png"],
   },
 };
