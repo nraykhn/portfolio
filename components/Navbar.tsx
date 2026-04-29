@@ -6,7 +6,7 @@ import '../app/components.css'
 export default function Navbar() {
   return (
     <nav>
-      <Link href="/" className="nav-logo">alya<span>.</span>dev</Link>
+      <Link href="https://www.alyakhairina.com" className="nav-logo">alyakhairina<span>.</span>com</Link>
       <div className="nav-links">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>

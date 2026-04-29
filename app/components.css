@@ -779,6 +779,12 @@ nav {
   font-size: 11px;
   color: var(--subtext);
 }
+.edu-meta {
+  font-size: 12px;
+  color: var(--subtext);
+  margin-top: 4px;
+  font-family: var(--font-mono);
+}
 
 /* CONTACT */
 .contact-item {

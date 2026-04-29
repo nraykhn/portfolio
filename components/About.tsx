@@ -41,10 +41,14 @@ export default function About() {
                 <div className="education-row">
                   <img src="/ui-logo.png" alt="UI" />
                   <div>
-                    <div className="edu-main">S1 Information Systems</div>
+                    <div className="edu-main">Universitas Indonesia</div>
                     <div className="edu-sub">
-                      Faculty of Computer Science · Universitas Indonesia
+                      Information Systems (B.S.) ·
+                      Faculty of Computer Science
+                    </div><div className="edu-meta">
+                      2023 – Present · 3rd Year
                     </div>
+
                   </div>
                 </div>
               </div>
