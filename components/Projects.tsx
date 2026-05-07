@@ -7,6 +7,7 @@ interface Project {
   name: string
   desc: string
   tags: { label: string; icon: string; accent?: boolean }[]
+  links?: { label: string; url: string }[]
 }
 
 
@@ -18,6 +19,9 @@ const projects: Project[] = [
     tags: [
       { label: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg', accent: true },
     ],
+    links: [
+      { label: 'Figma Prototype', url: 'https://www.figma.com/proto/c0HF0xa5xQtqdeVJZNf5Gt/Kelas-D_Template-5_PeduliPeduli?node-id=514-8767&t=fEn0MMhG2DmOZVKq-1&scaling=scale-down&content-scaling=fixed&page-id=13%3A3&starting-point-node-id=514%3A8719' },
+    ],
   },
   {
     image: '/projects/olehbali.png',
@@ -28,6 +32,10 @@ const projects: Project[] = [
       { label: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg' },
       { label: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
     ],
+    links: [
+      { label: 'Web Repository', url: 'https://github.com/Kelompok-A06/olehBali' },
+      { label: 'Mobile Repository', url: 'https://github.com/Kelompok-A06/olehBali-Mobile' },
+    ],
   },
   {image: '/projects/medichill.png',
     name: 'MediChill',
@@ -36,6 +44,9 @@ const projects: Project[] = [
       { label: 'Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg', accent: true },
       { label: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
       { label: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg'  },
+    ],
+    links: [
+      { label: 'Repository', url: 'https://github.com/nraykhn/medichill' },
     ],
   },
   {
@@ -46,6 +57,9 @@ const projects: Project[] = [
       { label: 'Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg', accent: true },
       { label: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg' },
       { label: 'Supabase', icon: '/supabase.png' },
+    ],
+    links: [
+      { label: 'Repository', url: 'https://github.com/Basdat-A12/Sizopi-A-12' },
     ],
   },
   {
@@ -67,6 +81,21 @@ const projects: Project[] = [
       { label: 'Vue.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg' },
       { label: 'AWS', icon: '/black-aws.png' },
       { label: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg' },
+    ],
+    links: [
+      { label: 'Backend', url: 'https://github.com/nraykhn/travelapap-be' },
+      { label: 'Frontend', url: 'https://github.com/nraykhn/travelapap-fe' },
+    ],
+  },
+  {
+    image: '/projects/skinsmart.png',
+    name: 'Skinsmart — UI/UX',
+    desc: 'Skincare app design with full UX process from research to usability testing.',
+    tags: [
+      { label: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg', accent: true },
+    ],
+    links: [
+      { label: 'Figma Prototype', url: 'https://www.figma.com/proto/yvjcRIRzZsh2jp0Zl5vzNP/PPD-TK2?node-id=512-1770&t=zM0GiOB35VnHWDEU-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=512%3A1770&show-proto-sidebar=1' },
     ],
   },
   
@@ -97,6 +126,22 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
+
+        {project.links && project.links.length > 0 && (
+          <div className="project-links">
+            {project.links.map((link) => (
+              <a
+                key={link.label}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link-btn"
+              >
+                {link.label} →
+              </a>
+            ))}
+          </div>
+        )}
       </div>
 
       

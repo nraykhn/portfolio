@@ -401,6 +401,36 @@ nav {
   background: var(--accent-dim);
 }
 
+/* PROJECT LINKS */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--accent-dim);
+  border: 1px solid var(--border-bright);
+  color: var(--accent);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.project-link-btn:hover {
+  background: rgba(34, 197, 94, 0.2);
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.2);
+  transform: translateY(-1px);
+}
+
 /* window style (macOS dots) */
 .window-bar {
   position: absolute;
